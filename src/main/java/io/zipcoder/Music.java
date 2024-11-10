@@ -12,19 +12,23 @@ public class Music {
 
         String[] playlist = {"wheniseeyouagain", "borntorun", "nothingelsematters", "cecelia "};
 
-         int jumpsForward = -1;
-         int jumpsBackward = -1;
+         int jumpsForward = 0;
+
+       //  startIndex = 1;
+        // int jumpsBackward = -1;
         for (int i = startIndex; i < playList.length; i++) {
             if (playList[i] != selection) {
                 jumpsForward += 1;
-                jumpsBackward += 1;
+
             }
         }
-        if (jumpsForward < playList.length + jumpsForward && jumpsBackward < playList.length +jumpsBackward) {
+        if (jumpsForward < playList.length + jumpsForward ) {
             return jumpsForward;
 
         } else {
-            return playlist.length + jumpsBackward;
+
+
+            return jumpsForward;
 
         }
 
@@ -33,7 +37,6 @@ public class Music {
 
 
         }
-
 
 
 
