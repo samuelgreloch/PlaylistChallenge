@@ -10,31 +10,24 @@ public class Music {
 
     public Integer selection(Integer startIndex, String selection) {
 
-        String[] playlist = {"wheniseeyouagain", "borntorun", "nothingelsematters", "cecelia "};
+       // String[] playlist = {"wheniseeyouagain", "borntorun", "nothingelsematters", "cecelia "};
 
          int jumpsForward = 0;
 
-       //  startIndex = 1;
+         startIndex = 1;
         // int jumpsBackward = -1;
         for (int i = startIndex; i < playList.length; i++) {
-            if (playList[i] != selection) {
-                jumpsForward += 1;
+            if (playList[i].equals(selection)){
+              return   jumpsForward;
 
             }
-        }
-        if (jumpsForward < playList.length + jumpsForward ) {
-            return jumpsForward;
-
-        } else {
-
-
-            return jumpsForward;
-
+            jumpsForward++;
         }
 
 
 
 
+return -1;
 
         }
 
